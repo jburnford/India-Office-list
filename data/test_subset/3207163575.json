@@ -1,0 +1,39 @@
+{
+  "id": "d061aed43249d313f61a1489e0a478224f05de47",
+  "text": "SHOCKING OCCURRENCE.—A boy named James Parry, eight years and a half old, and a girl named Mary Hand, nine years of age, playing together in Thomas's-street, on Monday afternoon, the latter found in the street, opposite the shop of Mr. Winder, druggist, a bottle which they supposed to be a bottle of \"pop,\" and the former immediately drank it off. It proved to be \"oil of vitriol,\" and the boy lingered in much suffering through the night, and died of the effects about five o'clock the next morning. It is supposed that the bottle had been thrown out by a young man in Mr. Winder's employ, in mistake for a broken bottle. An inquest was held on view of the body, and the verdict was \"Accidental Death.\"—Manchester Chronicle.\n\nA trial has recently taken place in Corsica for one of those frequent murders, the result of ancient feuds, for which that country is so deplorably remarkable. The names of the prisoners were Marsilius Nicolai and Jacques Grigi. The following was the substance of evidence against them:—\"On the 18th of April, 1833, J. Ferri, J. Lucioni, Nicodemus and Paul Automarchi, seized some sheep which were found trespassing upon the lands of the Automarchi, and which belonged to a family called Nicolai, with whom they had been for a long time at variance. As they were driving the sheep to the pound, they came about noon to a part of the road called Reposatajo, when they were suddenly assailed by a shower of musket balls, aimed at them by seven or eight individuals, amongst whom were Marsilius Nicolai and Jacques Grigi. Ferri and Nicodemus Automarchi were killed on the spot, and Lucioni, who received two balls, one in the breast and the other in the right eye, expired a few hours after. Paul Automarchi, though severely wounded, succeeded in making his escape. Paul Automarchi deposed that he recognised Marsilius Nicolai amongst the assassins, and that it was he who fired at him. Other witnesses declared that, immediately before dying, Lucioni had affirmed that Marsilius Nicolai was one of the murderers. The next witness was John Baptist Luccioni, the father of one of the victims. Being asked by the President, at the desire of the prisoner, if he were not his enemy, he turned towards Nicolai, and, with the most impassioned gestures and tone of voice, thus addressed him, \"O, Marsilius, you say I am your enemy, but are you not Marsilius? Is it not to you and your brothers that we owe all our misfortunes? Have you not ravaged our fields, rooted up our olive-trees, killed our cattle, besieged our houses, and ruined our families? Is it not to you that I owe the death of a brother, a brother-in-law, two nephews, and a son? Do you not know me?—look me full in the face? I know you well, you are Marsilius!\" This apostrophe produced a profound effect, both upon the prisoner and the audience. The Jury acquitted Grigi, but found Marsilius Nicolai guilty of murder, and the Court sentenced him to hard labour for life at the hulks.",
+  "source": "olmocr",
+  "added": "2025-09-18",
+  "created": "2025-09-18",
+  "metadata": {
+    "Source-File": "/home/jic823/projects/def-jic823/pdf/3207163575.pdf",
+    "olmocr-version": "0.3.4",
+    "pdf-total-pages": 1,
+    "total-input-tokens": 1062,
+    "total-output-tokens": 744,
+    "total-fallback-pages": 0
+  },
+  "attributes": {
+    "pdf_page_numbers": [
+      [
+        0,
+        2969,
+        1
+      ]
+    ],
+    "primary_language": [
+      "en"
+    ],
+    "is_rotation_valid": [
+      true
+    ],
+    "rotation_correction": [
+      0
+    ],
+    "is_table": [
+      false
+    ],
+    "is_diagram": [
+      false
+    ]
+  }
+}

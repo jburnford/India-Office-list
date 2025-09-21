@@ -1,0 +1,422 @@
+{
+  "colony": "Gold Coast",
+  "source": "Colonial Office List 1896",
+  "extraction_method": "Adaptive chunking + precise boundary detection",
+  "statistics": {
+    "chunks_extracted": 12,
+    "total_characters": 22543,
+    "sections_identified": [
+      "Geography & Demographics",
+      "Ashanti Relations",
+      "Climate"
+    ]
+  },
+  "chunks": [
+    {
+      "text": "THE GOLD COAST COLONY.\n\nSituation, Area, and Native Tribes.\n\nThe Gold Coast is the name given to that portion of Upper Guinea, between 8° W. long. and 1° 10' E. long., and is bounded on the west by the French settlements of Assinie, and on the east by the German colony of Togoland.\n\nThe country is inhabited by a large number of native tribes more or less independent of each other, but with similar customs and forms of government. Each tribe has its own head chief or king, and every town or village of the tribe a chief. The chiefs form the king's council, and assist him in dealing with matters affecting the general welfare of the tribe. The succession both to the king's and chiefs' stools is for the most part hereditary by the female side, the heir to the stool being the son of the occupant's eldest sister, or failing male offspring by his sisters, his brothers according to seniority, and back from them to the male offspring of his aunts on the father's side.\n\nThe principal coast tribes are the following:—Appolonia, Ahanta, Chama, Kommenda, Elmina, Cape Coast or Fanti, Winneba, Assin Gomos, Accra, Adangme, Awunsa, Agbosome and Affloa. Some of these, on account of tribal differences are split up into divisions more or less independent of each other, and as education and civilization spread, a tendency to further disintegration develops itself.\n\nIn the interior the principal tribes are:—Aowin, upper and lower Wassaw, Sefwi, upper and lower Denkera, Tchufui, Assin, Esse Kuma, Edumako, eastern and western Akim, Akwapim, eastern and western Krobo, Akwamu, Krepi, Kwahu, Atabubu, Shai, Ningo, Krekor, and Anum.",
+      "start_pos": 0,
+      "end_pos": 1629,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_916",
+      "metadata": {
+        "size": 1629,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 912,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nFor the purposes of administration the Colony is divided into thirteen districts, each presided over by a commissioner, who besides performing judicial duties as magistrate, is the Chief Executive Officer of the district. The headquarters of each district with two exceptions, are on the coast.\n\nThe districts are known by the following names:—Wassaw, Axim, Dixcove, Chama, Elmina, Cape Coast, Saltpond, Winneba, Accra, Pram Pram, Ada, Kwitta, and Volta River.\n\nHistory.\n\nIt is generally accepted that the Gold Coast, with the adjacent territories bordering on the Gulf of Guinea, were discovered by French navigators in the fourteenth century. The first really historic accounts that are extant of the Gold Coast are dated 1666, when a company was formed at Rouen, to trade with West Africa. Thirty years later the French established themselves in force at a place which they named La Mine, now called Elmina, and built there a large castle, the towers and bastions of which are still well preserved. The Rouen Company remained predominant on the Coast for nearly a century, when their trade failed, and they finally abandoned it.\n\nThe fame of the wealth of the Gold Coast attracted a large number of adventurers of all nations to the Gulf of Guinea, and during the sixteenth, seventeenth and eighteenth centuries, a vast number of factories were established at various points along the seaboard, and the trade of the coast was eagerly disputed by the French, Portuguese, Danes, English, Bradenburgers, Dutch and Swedes, who dotted the whole coast line with formidable forts, erected to defend their commerce.",
+      "start_pos": 0,
+      "end_pos": 1611,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_917",
+      "metadata": {
+        "size": 1611,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "personnel_titles: Commissioner"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 913,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nIn 1672 an English company was formed, called the Royal African Company, which built forts at Dixcove, Sekundu, Kommenda, Ananaba, Winneba, Accra, and Whyda, besides strengthening Cape Coast Castle, which was already in existence. It was succeeded in 1750 by the African Company of Merchants, constituted by Act of Parliament, with liberty to trade and to form establishments on the West Coast of Africa, between 20° N. and 20° S. lat. This company, which received an annual subsidy from the Government, suffered by the abolition of the slave trade in 1807, and was dissolved in 1821 by Act of Parliament, and the forts transferred to the Crown, and placed under the Government of the West African Settlements. The fort at Whyda was abandoned.\n\nIn 1824, the Governor of Sierra Leone, Sir Charles Macarthy, on visiting Cape Coast Castle, found the neighbouring country of the Fantis in possession of the Ashantis. He formed the resolution of inciting the Fantis against their oppressors, and led an army of them, with a few disciplined soldiers, against the Ashantis at Ensimankao, where on the 24th of January, 1824, he was killed, and his force totally routed.\n\nThe war which ensued was ended by the victory of the English at Dodowa, near Accra, in 1827. Peace was formally concluded by a tripartite Treaty in 1831 between the English, the Fantis, and the Ashantis.\n\nIn the meantime, Her Majesty's Government had inclined to the policy of retiring from the coast altogether, and after the peace they actually transferred the government of the forts to the local and London merchants interested, who secured as their Governor Mr. George Maclean, a man of marked energy and capacity. This gentleman, with a force of no more than 100 men at command, and with a Government subsidy of only 4,000l. a year, contrived to extend and maintain the influence of his government over the whole tract of country now known as the Gold Coast Protectorate. In 1848, it having been suspected that the Merchant Government connived at the Slave Trade, the forts were resumed by the Crown, and a Lieut.-Governor appointed. Mr. Maclean was continued in the direction of Native Affairs, under the title of Judicial Assessor to the Native Chiefs, which post he held until his death in 1847.",
+      "start_pos": 0,
+      "end_pos": 2268,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_918",
+      "metadata": {
+        "size": 2268,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "administrative_hierarchy: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 914,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nIn 1850, the Danish forts at Christiansborg, Teesi, Ningo, Ada, and Kitta were purchased from the King of Denmark for 10,000l., the Danish Protectorate, which included the country inhabited by the Shals, Krobos (Eastern and Western), Akims (Eastern and Western), Akwapime, Akwamus, and Krepis being at the same time transferred.\n\nIn 1852 a large meeting of the native chiefs (afterwards known as the \"Legislative Assembly\") agreed to pay a poll tax in exchange for British protection. This tax gradually fell in arrear, and was abandoned, though some was received up to 1861.\n\nInterspersed amongst the British settlement there had always been a number of Dutch forts. This circumstance was an abiding source of embarrassment to the British Government, as, the Dutch settlements being free ports, no appreciable customs duties could be imposed at the British ports. A partition of the coast was therefore effected by a Convention which came into force on the\n1st of January, 1868, the Dutch taking the country west of the Sweet river, the British that lying to the east. The Dutch acquired Dixcove, Appolonia, Sekundi, and Kommanda; the British acquired Dutch Accra, Berraku, Appam, Kormantine, and Mori. Her Majesty also relinquished to the King of Holland the protectorate over the two Wassaws, Appolonia, Tchuful, and Denkera.\n\nThe Dutch found their new possessions extremely unruly. Their authority was defied by the protected tribes of the interior, and their officers outraged and ill-treated on the coast; and by a convention, signed at the Hague in 1871, they abandoned to Great Britain the whole of their rights on the coast. Before the Convention was ratified, an assurance was first sought and received from the King of Ashanti that he had no claim on the Dutch settlements of Elmina, and the forts were transferred on the 6th of April, 1872.",
+      "start_pos": 0,
+      "end_pos": 1853,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_919",
+      "metadata": {
+        "size": 1853,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 915,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nRelations with Ashanti.\n\nAshanti is inhabited by a large number of confederated tribes, the principal of which are the Bekwais, Juabins, Kokofus, Kumasis, Danississ, Mampons, Nsutas, Nkwantas, Dadiassiss, Ofinsus, and Adjissus. Each tribe has its own king, but from time immemorial the King of Kumasi has been recognized as the King paramount of the Confederation. As King paramount, he succeeds to what is known as the \"golden stool,\" and is installed by the Kings of Bekwai, Juabin, and Kokofu, the ceremony of enstoolment lasting several weeks, and being observed by the performance of native customs, which in times past consisted largely in the sacrifice of slaves.\n\nOn 9th Dec., 1872, the King of Ashanti, despatched from Kumasi an army of 40,000 men to invade the British Protectorate. His army crossed the Pra on the 29th of January, 1873, and spread itself slowly over the country, ravaging as it advanced. In April it met and defeated the Fanti allies at Dunkwa, and again in June at Jukwa, and then attacked the fortress of Elmina, where it was entirely defeated by the seamen and Marines of the Fleet, in conjunction with the Colonial Forces, all under the command of the late Colonel (afterwards Sir) Francis Festing.\n\nAfter this the war languished for some time, until the late Captain, afterwards Sir John Glover, was commissioned to repair to the eastern districts of the Protectorate, and organise the tribes in that quarter for a flank movement against the Ashanti territory. At the same time Sir Garnet, now Viscount, Wolseley, was despatched with troops to the Gold Coast. The British troops arrived early in December, but a good road to the Pra not having been completed, they were sent to sea again. In the meantime Sir Garnet Wolseley, by the aid of native levies, West Indian troops, and seamen and Marines, had been driving the enemy towards the Pra, which they crossed in the end of November. The white troops landed towards the end of December, and Sir Garnet Wolseley and his headquarters crossed the Pra on the 20th of January. The King of Ashanti now begged for peace, and sent the captive missionaries and others to the British camp; but as his language and acts were not satisfactory, Sir Garnet Wolseley continued his advance, and on the 31st of January came into general engagement with the enemy at Amoafu, where, after desperate resistance, he drove them from their position. The next four days were employed continuously in fighting, until, on the evening of the 4th of February, the British force entered Kumasi. The King had fled to the bush. Negotiations were opened with him, but without result, and on the 6th Sir Garnet Wolseley quitted Kumasi and commenced his march to the Coast, the Royal Engineers firing the city as the force marched out. In the meantime Sir John Glover had been advancing from the east with Hausas and native allies, and on the 12th he passed through the burning ruins of Kumasi. On the 13th messengers sent by the King concluded a peace with Sir Garnet Wolseley at Fommane, which was afterwards signed with a pencil cross by King Kofi. By the Treaty of Fommana the King of Ashanti renounced all claims on the Protectorate, promised to protect traders, to abandon human sacrifices, to keep up a good road to the Pra, to pay an indemnity of 50,000 ozs. of gold, and to respect the independence of the Adansis, a tribe inhabiting the country between Pra and that of the powerful Ashanti tribe of Bekwai. King Kofi Kari-Kari was deposed, and was succeeded by King Mensah, who, in his turn, was deposed in 1881.",
+      "start_pos": 0,
+      "end_pos": 3574,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_920",
+      "metadata": {
+        "size": 3574,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 916,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nEarly in 1881 fresh troubles broke out with Ashanti, the affair having at one time a serious aspect. Awusu, a prince of Gaman, who was also connected with the Ashanti Royal family, escaped from Kumasi, where he had been kept under surveillance, to Elmina. He was followed by Ashanti ambassadors, demanding that he should be at once sent back. These envoys brought with them the golden axe, an emblem which was considered by the Government to be a threat of war. The demand was of course refused, and preparations were commenced by Lieut.-Governor (now Sir Brandford) Griffith for the defence of the Protectorate. Reinforcements from the West India Regiments at Sierra Leone and the West Indies were despatched, a small Naval Brigade was landed, and early in March Sir Samuel Rowe, who had just been appointed Governor, arrived. About the same time Ashanti messengers were sent to deny that any threat of war had been intended. The force in the Colony now consisted of about 1,200 men of the W.I. Regiments and Hausa Police. In April the Ashanti ambassadors were received by the Governor at Prasu, and eventually an apology from them, together with 2,000 ounces of gold as an indemnity, was accepted. The gold axe was sent home as a present to the Queen.\n\nAfter an interregnum of about two years, during which period much trouble and disturbance of trade was occasioned through intrigues designed to replace Kari-Kari upon \"The Stool,\" Kwaku Dua was elected king in April, 1884, but he died June, 1884.",
+      "start_pos": 0,
+      "end_pos": 1502,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_921",
+      "metadata": {
+        "size": 1502,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 917,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nAfter the death of Kwaku Dua II dissension broke out among the confederated tribes. The Kokofus and Juabins fought against each other, the latter were driven out of the country, a large number finding an asylum within the Protectorate, and being located at Konforoduia, where they have built a town and still reside. Dissensions also arose as to the succession to Kwaku. The Kokofus, Mampons, Nsutas, Nkwantas and Dadiassiss favoured the claims of Atcheri Boanda, while the Kumasis, Bekwais, Ofinsus and Adjissus advocated those of Prempeh. Wars ensued, resulting in great loss of life and injury to trade, and Captains Lonsdale and Barnett were therefore sent to Ashanti to endeavour to adjust differences, and in April, 1888, Prempeh, whose adherents had gradually driven their adversaries out of the\ncountry into the Protectorate, was recognised as king. He has taken the title of Kwaku Dua III, but has not been placed on the Golden Stool in accordance with native custom. He is still unrecognised by the Kokofus and other tribes who remain within the Protectorate rather than return to their respective countries and acknowledge his position. The Kokofus are located at Akrossi, in Western Akim.\n\nKing Prempeh has from time to time made overtures to the kings of the fugitive tribes with a view to their return, but so far unsuccessfully. In 1893, the Nkoranzas, a tributary tribe located in the country to the north of Ashanti, unsuccessfully endeavoured to assert their independence, and from this and other circumstances it would seem that Prempeh's rule is by no means popular with the Ashanti people.",
+      "start_pos": 0,
+      "end_pos": 1611,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_922",
+      "metadata": {
+        "size": 1611,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 918,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nIn consequence of his interference with trade, and refusal to accept a Resident, and other causes, an expedition, under Sir F. Scott, was despatched to Kumasi in 1895, and entered that place without resistance in Jan., 1896. Prempeh then made his submission, and agreed to accept a Resident and a British Protectorate.\n\nConstitution.\n\nAt the conclusion of peace in 1874, measures were taken for placing the government of the Gold Coast upon a footing of efficiency and security.\n\nA new charter was issued, dated the 24th of July, 1874, separating the settlements of the Gold Coast and Lagos from the government of the West Africa Settlements, and erecting them into one colony under the style of the Gold Coast Colony, under a Governor-in-Chief, with an Administrator at Lagos. There was one Executive Council and one nominated Legislative Council for the two settlements, and one Supreme Court. The charter of 1874 was superseded by letters patent dated the 23rd of January, 1883, and 13th January, 1886, respectively. By the latter instrument Lagos was separated from the Gold Coast and formed into a distinct colony. Provision was made for an Executive and Legislative Council, the members of both being nominated by the Crown. Two unofficial members have been appointed to the Legislative Council.\n\nBy Order of the Queen in Council of 6th August, 1874, the Legislature was empowered to regulate by Ordinance or Ordinances all such powers as Her Majesty may enjoy in the protected territories.",
+      "start_pos": 0,
+      "end_pos": 1497,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_923",
+      "metadata": {
+        "size": 1497,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate",
+          "personnel_titles: Resident",
+          "personnel_titles: Administrator"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 919,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nThe Supreme Court of the Colony was a Court of Appeal for Lagos, and also under the West African Order in Council, 1884, but legislation providing for the establishment of separate courts of appeal in each colony was passed in 1888.\n\nLaw and Justice.\n\nThe law of the colony is the common law, the doctrines of equity, and the statutes of general application in force in England on the 24th July, 1874, modified by a large number of Local Ordinances passed at various periods since that date. The Criminal Law was codified in 1892, and civil and criminal procedure are regulated by the Supreme Court Ordinance passed in 1876.\n\nJustice is administered by the Supreme Court presided over by the Chief Justice, Divisional Courts held in different parts of the colony by two puisne judges, and thirteen inferior Courts with limited criminal and civil jurisdiction presided over by District Commissioners. The Supreme Court has an original civil and criminal jurisdiction, and decides appeals from the inferior courts in civil matters, while the Chief Justice has a power of revision of the decisions of the Commissioners in criminal cases. Appeals from Divisional Courts are heard by a full court.\n\nNative law is administered in all the Courts, in as far as it is not incompatible with any Statute or Ordinance, and not repugnant to natural justice.\n\nThe Forts of St. James at Accra, St. Jago at Elmina, and Cape Coast Castle are utilised as prisons pending the erection of a central prison at Accra.",
+      "start_pos": 0,
+      "end_pos": 1496,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_924",
+      "metadata": {
+        "size": 1496,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "personnel_titles: Commissioner"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 920,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nAt Accra convicts are taught trades, remunerative industries are carried on, and the English penal system is carried out in a modified form.\n\nClimate.\n\nThe climate is very unhealthy, especially for Europeans. In 1891 the death rate among the non-official European population was 32·7 per 1,000; in 1892, 79·7 per 1,000; in 1893, 64·93 per 1,000; and in 1894, 19·6 per 1,000; and among the European officials 30·7 per 1,000 in 1891; 36·3 per 1,000 in 1892; 31·25 per 1,000 in 1893; and 33·7 per 1,000 in 1894. No data are at hand for estimating the death rate among the natives. Infant mortality is great. The mean temperature in the shade during the past seven years was, at Accra, 85·31° F. The average annual rainfall at the same place and during the same period was 29·08 inches.\n\nThe rainfall varies with the physical configuration of the country, and is very great in Axim and the mining districts of Tarkwa, Upper and Lower Wassaw, &c. The \"first rains,\" or rainy season proper, begin in March and end in July, the \"latter rains\" are spread over the months of September and October. The Harmattan season begins in December and ends in February. It is characterized by a cool wind which is sometimes dry and bracing, but often moist and then very depressing. The climate generally is hot and moist and very malarious.\n\nDomestic Slavery.\n\nDomestic slavery existed from time immemorial on the Gold Coast, as in other parts of Africa, the slave population consisting partly of native-born slaves, and partly of Donkos, slaves purchased from Ashanti importers. Slavery was mainly an emanation of parental authority, every man being saleable either by his father or mother, according to the character of the union subsisting between his parents, and the consequent status of the mother; but there was also a species of slavery called pawning, founded on contract, which arose when a debtor gave to his creditor, as a security, either himself, or a child or slave, to be a temporary slave in the hands of the creditor until debt and interest were paid.",
+      "start_pos": 0,
+      "end_pos": 2052,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_925",
+      "metadata": {
+        "size": 2052,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 921,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nWithin the British possessions on the Gold Coast, slavery was abolished by force of the statute 3 & 4 Will. IV., c. 73, but no attempt had been made to deal with it in the Protectorate, which was not affected by that statute. The harsher usages of slavery were, however, appreciably mitigated by the action of the court of the \"judicial assessor to the Native Chiefs\" and other magistrates. At the conclusion of the war of 1873-4 the question was taken in hand anew by the newly established Legislative Council at its first meeting, and settled by two\nordinances. One of these prohibits, under penalties, the introduction of slaves into the Protectorate, and the buying and selling, and pawning of slaves and other persons within the Protectorate; and the second declares, that henceforth no court, native or British, shall take notice of, so as to give effect to, the relations between master and slave, except in so far as those relations may be in accordance with the law of England relating to master and servant.\n\nMail and Steamship Service.\n\nA steamer of the British and African Company, or the African Steamship Company, leaves Liverpool every Saturday, calling at Grand Canary, Sierra Leone, Cape Coast and Accra, the length of the voyage to Accra being 21 days. Every alternate Wednesday one of these two companies' steamers leaves Liverpool touching at Madeira and Teneriffe and every port on the West Coast as far as Kwitta, the voyage to Kwitta being timed to occupy 28 days. Every 20 and 21 days steamers of the above two lines leave Hamburg calling at most of the West African ports as far as Kwitta, the voyage to Accra occupying 29 days.",
+      "start_pos": 0,
+      "end_pos": 1654,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_926",
+      "metadata": {
+        "size": 1654,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [
+          "territorial_control: Protectorate"
+        ],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 922,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    },
+    {
+      "text": "\nThere is a monthly departure from Liverpool of one of the Company's steamers for Sierra Leone, Accra, Lagos, and ports on the South-West Coast as far as Loanda, the journey averaging 41 days. There is also a German line of steamers starting from Hamburg, and a French line starting from Havre, which call at the Gold Coast and other ports.\n\nInternal Communication.\n\nThere is no railway in the colony, but in 1893 a survey for a line from Kormantin Bay, about 3 miles west of Saltpond, was commenced, and in 1894 completed as far north as Insuaim, on the left bank of the Birrim River. The question of constructing the railway is under consideration.\n\nThe only roads properly so called in the colony are, the road between Accra and Christiansborg, a distance of 2½ miles, the road from the latter place to the Government Sanitarium at Aburi, a distance of 26 miles, the military road between Cape Coast and Prahsu, a distance of 75 miles, and the road from Cape Coast to Anamaboe, a distance of 12 miles. In addition to these the road from Aburi through Akwapim and Eastern and Western Krobo to Kpong and Akuse, and the road from Chama to Tarkwa (Upper Wassaw) are all under more or less constant Government supervision, and on that account are kept in fair order. The native kings and chiefs who can be induced to keep their bush tracks clear of bush and passable for traders and travellers at all periods of the year are paid 10s. a quarter, per mile, and cutlasses and hatchets are loaned to them by the Government to assist them in the work, but it is only within the immediate vicinity of the several Government stations that the bush-tracks are as a rule in fair order. A road overseer has been appointed in several of the districts, and a Roads Department has been established.",
+      "start_pos": 0,
+      "end_pos": 1784,
+      "chunk_id": "8ada869d4d251076e55ff7a4b21ffff43efb5568_admin_927",
+      "metadata": {
+        "size": 1784,
+        "strategy": "AdministrativeChunker",
+        "section_type": "major_heading",
+        "has_tables": false,
+        "colonial_discourse_markers": [],
+        "document_type": "administrative",
+        "document_confidence": 0.8999999999999999,
+        "chunk_index": 923,
+        "colonial_discourse_detected": true,
+        "bias_flags": {
+          "colonial_discourse": true,
+          "markers_detected": [
+            "administrative_colonial: Colonial\\s+Office",
+            "administrative_colonial: Governor\\s+and\\s+Commander",
+            "administrative_colonial: Her\\s+Majesty[\\'\\u2019]?s\\s+Government",
+            "administrative_colonial: British\\s+Empire",
+            "hierarchical_language: native\\s+administration",
+            "hierarchical_language: tribal\\s+authority",
+            "territorial_control: Protectorate",
+            "territorial_control: Crown\\s+Colony",
+            "territorial_control: Dependencies",
+            "territorial_control: British\\s+jurisdiction"
+          ]
+        }
+      }
+    }
+  ],
+  "full_text": "THE GOLD COAST COLONY.\n\nSituation, Area, and Native Tribes.\n\nThe Gold Coast is the name given to that portion of Upper Guinea, between 8° W. long. and 1° 10' E. long., and is bounded on the west by the French settlements of Assinie, and on the east by the German colony of Togoland.\n\nThe country is inhabited by a large number of native tribes more or less independent of each other, but with similar customs and forms of government. Each tribe has its own head chief or king, and every town or village of the tribe a chief. The chiefs form the king's council, and assist him in dealing with matters affecting the general welfare of the tribe. The succession both to the king's and chiefs' stools is for the most part hereditary by the female side, the heir to the stool being the son of the occupant's eldest sister, or failing male offspring by his sisters, his brothers according to seniority, and back from them to the male offspring of his aunts on the father's side.\n\nThe principal coast tribes are the following:—Appolonia, Ahanta, Chama, Kommenda, Elmina, Cape Coast or Fanti, Winneba, Assin Gomos, Accra, Adangme, Awunsa, Agbosome and Affloa. Some of these, on account of tribal differences are split up into divisions more or less independent of each other, and as education and civilization spread, a tendency to further disintegration develops itself.\n\nIn the interior the principal tribes are:—Aowin, upper and lower Wassaw, Sefwi, upper and lower Denkera, Tchufui, Assin, Esse Kuma, Edumako, eastern and western Akim, Akwapim, eastern and western Krobo, Akwamu, Krepi, Kwahu, Atabubu, Shai, Ningo, Krekor, and Anum.\n\nFor the purposes of administration the Colony is divided into thirteen districts, each presided over by a commissioner, who besides performing judicial duties as magistrate, is the Chief Executive Officer of the district. The headquarters of each district with two exceptions, are on the coast.\n\nThe districts are known by the following names:—Wassaw, Axim, Dixcove, Chama, Elmina, Cape Coast, Saltpond, Winneba, Accra, Pram Pram, Ada, Kwitta, and Volta River.\n\nHistory.\n\nIt is generally accepted that the Gold Coast, with the adjacent territories bordering on the Gulf of Guinea, were discovered by French navigators in the fourteenth century. The first really historic accounts that are extant of the Gold Coast are dated 1666, when a company was formed at Rouen, to trade with West Africa. Thirty years later the French established themselves in force at a place which they named La Mine, now called Elmina, and built there a large castle, the towers and bastions of which are still well preserved. The Rouen Company remained predominant on the Coast for nearly a century, when their trade failed, and they finally abandoned it.\n\nThe fame of the wealth of the Gold Coast attracted a large number of adventurers of all nations to the Gulf of Guinea, and during the sixteenth, seventeenth and eighteenth centuries, a vast number of factories were established at various points along the seaboard, and the trade of the coast was eagerly disputed by the French, Portuguese, Danes, English, Bradenburgers, Dutch and Swedes, who dotted the whole coast line with formidable forts, erected to defend their commerce.\n\nIn 1672 an English company was formed, called the Royal African Company, which built forts at Dixcove, Sekundu, Kommenda, Ananaba, Winneba, Accra, and Whyda, besides strengthening Cape Coast Castle, which was already in existence. It was succeeded in 1750 by the African Company of Merchants, constituted by Act of Parliament, with liberty to trade and to form establishments on the West Coast of Africa, between 20° N. and 20° S. lat. This company, which received an annual subsidy from the Government, suffered by the abolition of the slave trade in 1807, and was dissolved in 1821 by Act of Parliament, and the forts transferred to the Crown, and placed under the Government of the West African Settlements. The fort at Whyda was abandoned.\n\nIn 1824, the Governor of Sierra Leone, Sir Charles Macarthy, on visiting Cape Coast Castle, found the neighbouring country of the Fantis in possession of the Ashantis. He formed the resolution of inciting the Fantis against their oppressors, and led an army of them, with a few disciplined soldiers, against the Ashantis at Ensimankao, where on the 24th of January, 1824, he was killed, and his force totally routed.\n\nThe war which ensued was ended by the victory of the English at Dodowa, near Accra, in 1827. Peace was formally concluded by a tripartite Treaty in 1831 between the English, the Fantis, and the Ashantis.\n\nIn the meantime, Her Majesty's Government had inclined to the policy of retiring from the coast altogether, and after the peace they actually transferred the government of the forts to the local and London merchants interested, who secured as their Governor Mr. George Maclean, a man of marked energy and capacity. This gentleman, with a force of no more than 100 men at command, and with a Government subsidy of only 4,000l. a year, contrived to extend and maintain the influence of his government over the whole tract of country now known as the Gold Coast Protectorate. In 1848, it having been suspected that the Merchant Government connived at the Slave Trade, the forts were resumed by the Crown, and a Lieut.-Governor appointed. Mr. Maclean was continued in the direction of Native Affairs, under the title of Judicial Assessor to the Native Chiefs, which post he held until his death in 1847.\n\nIn 1850, the Danish forts at Christiansborg, Teesi, Ningo, Ada, and Kitta were purchased from the King of Denmark for 10,000l., the Danish Protectorate, which included the country inhabited by the Shals, Krobos (Eastern and Western), Akims (Eastern and Western), Akwapime, Akwamus, and Krepis being at the same time transferred.\n\nIn 1852 a large meeting of the native chiefs (afterwards known as the \"Legislative Assembly\") agreed to pay a poll tax in exchange for British protection. This tax gradually fell in arrear, and was abandoned, though some was received up to 1861.\n\nInterspersed amongst the British settlement there had always been a number of Dutch forts. This circumstance was an abiding source of embarrassment to the British Government, as, the Dutch settlements being free ports, no appreciable customs duties could be imposed at the British ports. A partition of the coast was therefore effected by a Convention which came into force on the\n1st of January, 1868, the Dutch taking the country west of the Sweet river, the British that lying to the east. The Dutch acquired Dixcove, Appolonia, Sekundi, and Kommanda; the British acquired Dutch Accra, Berraku, Appam, Kormantine, and Mori. Her Majesty also relinquished to the King of Holland the protectorate over the two Wassaws, Appolonia, Tchuful, and Denkera.\n\nThe Dutch found their new possessions extremely unruly. Their authority was defied by the protected tribes of the interior, and their officers outraged and ill-treated on the coast; and by a convention, signed at the Hague in 1871, they abandoned to Great Britain the whole of their rights on the coast. Before the Convention was ratified, an assurance was first sought and received from the King of Ashanti that he had no claim on the Dutch settlements of Elmina, and the forts were transferred on the 6th of April, 1872.\n\nRelations with Ashanti.\n\nAshanti is inhabited by a large number of confederated tribes, the principal of which are the Bekwais, Juabins, Kokofus, Kumasis, Danississ, Mampons, Nsutas, Nkwantas, Dadiassiss, Ofinsus, and Adjissus. Each tribe has its own king, but from time immemorial the King of Kumasi has been recognized as the King paramount of the Confederation. As King paramount, he succeeds to what is known as the \"golden stool,\" and is installed by the Kings of Bekwai, Juabin, and Kokofu, the ceremony of enstoolment lasting several weeks, and being observed by the performance of native customs, which in times past consisted largely in the sacrifice of slaves.\n\nOn 9th Dec., 1872, the King of Ashanti, despatched from Kumasi an army of 40,000 men to invade the British Protectorate. His army crossed the Pra on the 29th of January, 1873, and spread itself slowly over the country, ravaging as it advanced. In April it met and defeated the Fanti allies at Dunkwa, and again in June at Jukwa, and then attacked the fortress of Elmina, where it was entirely defeated by the seamen and Marines of the Fleet, in conjunction with the Colonial Forces, all under the command of the late Colonel (afterwards Sir) Francis Festing.\n\nAfter this the war languished for some time, until the late Captain, afterwards Sir John Glover, was commissioned to repair to the eastern districts of the Protectorate, and organise the tribes in that quarter for a flank movement against the Ashanti territory. At the same time Sir Garnet, now Viscount, Wolseley, was despatched with troops to the Gold Coast. The British troops arrived early in December, but a good road to the Pra not having been completed, they were sent to sea again. In the meantime Sir Garnet Wolseley, by the aid of native levies, West Indian troops, and seamen and Marines, had been driving the enemy towards the Pra, which they crossed in the end of November. The white troops landed towards the end of December, and Sir Garnet Wolseley and his headquarters crossed the Pra on the 20th of January. The King of Ashanti now begged for peace, and sent the captive missionaries and others to the British camp; but as his language and acts were not satisfactory, Sir Garnet Wolseley continued his advance, and on the 31st of January came into general engagement with the enemy at Amoafu, where, after desperate resistance, he drove them from their position. The next four days were employed continuously in fighting, until, on the evening of the 4th of February, the British force entered Kumasi. The King had fled to the bush. Negotiations were opened with him, but without result, and on the 6th Sir Garnet Wolseley quitted Kumasi and commenced his march to the Coast, the Royal Engineers firing the city as the force marched out. In the meantime Sir John Glover had been advancing from the east with Hausas and native allies, and on the 12th he passed through the burning ruins of Kumasi. On the 13th messengers sent by the King concluded a peace with Sir Garnet Wolseley at Fommane, which was afterwards signed with a pencil cross by King Kofi. By the Treaty of Fommana the King of Ashanti renounced all claims on the Protectorate, promised to protect traders, to abandon human sacrifices, to keep up a good road to the Pra, to pay an indemnity of 50,000 ozs. of gold, and to respect the independence of the Adansis, a tribe inhabiting the country between Pra and that of the powerful Ashanti tribe of Bekwai. King Kofi Kari-Kari was deposed, and was succeeded by King Mensah, who, in his turn, was deposed in 1881.\n\nEarly in 1881 fresh troubles broke out with Ashanti, the affair having at one time a serious aspect. Awusu, a prince of Gaman, who was also connected with the Ashanti Royal family, escaped from Kumasi, where he had been kept under surveillance, to Elmina. He was followed by Ashanti ambassadors, demanding that he should be at once sent back. These envoys brought with them the golden axe, an emblem which was considered by the Government to be a threat of war. The demand was of course refused, and preparations were commenced by Lieut.-Governor (now Sir Brandford) Griffith for the defence of the Protectorate. Reinforcements from the West India Regiments at Sierra Leone and the West Indies were despatched, a small Naval Brigade was landed, and early in March Sir Samuel Rowe, who had just been appointed Governor, arrived. About the same time Ashanti messengers were sent to deny that any threat of war had been intended. The force in the Colony now consisted of about 1,200 men of the W.I. Regiments and Hausa Police. In April the Ashanti ambassadors were received by the Governor at Prasu, and eventually an apology from them, together with 2,000 ounces of gold as an indemnity, was accepted. The gold axe was sent home as a present to the Queen.\n\nAfter an interregnum of about two years, during which period much trouble and disturbance of trade was occasioned through intrigues designed to replace Kari-Kari upon \"The Stool,\" Kwaku Dua was elected king in April, 1884, but he died June, 1884.\n\nAfter the death of Kwaku Dua II dissension broke out among the confederated tribes. The Kokofus and Juabins fought against each other, the latter were driven out of the country, a large number finding an asylum within the Protectorate, and being located at Konforoduia, where they have built a town and still reside. Dissensions also arose as to the succession to Kwaku. The Kokofus, Mampons, Nsutas, Nkwantas and Dadiassiss favoured the claims of Atcheri Boanda, while the Kumasis, Bekwais, Ofinsus and Adjissus advocated those of Prempeh. Wars ensued, resulting in great loss of life and injury to trade, and Captains Lonsdale and Barnett were therefore sent to Ashanti to endeavour to adjust differences, and in April, 1888, Prempeh, whose adherents had gradually driven their adversaries out of the\ncountry into the Protectorate, was recognised as king. He has taken the title of Kwaku Dua III, but has not been placed on the Golden Stool in accordance with native custom. He is still unrecognised by the Kokofus and other tribes who remain within the Protectorate rather than return to their respective countries and acknowledge his position. The Kokofus are located at Akrossi, in Western Akim.\n\nKing Prempeh has from time to time made overtures to the kings of the fugitive tribes with a view to their return, but so far unsuccessfully. In 1893, the Nkoranzas, a tributary tribe located in the country to the north of Ashanti, unsuccessfully endeavoured to assert their independence, and from this and other circumstances it would seem that Prempeh's rule is by no means popular with the Ashanti people.\n\nIn consequence of his interference with trade, and refusal to accept a Resident, and other causes, an expedition, under Sir F. Scott, was despatched to Kumasi in 1895, and entered that place without resistance in Jan., 1896. Prempeh then made his submission, and agreed to accept a Resident and a British Protectorate.\n\nConstitution.\n\nAt the conclusion of peace in 1874, measures were taken for placing the government of the Gold Coast upon a footing of efficiency and security.\n\nA new charter was issued, dated the 24th of July, 1874, separating the settlements of the Gold Coast and Lagos from the government of the West Africa Settlements, and erecting them into one colony under the style of the Gold Coast Colony, under a Governor-in-Chief, with an Administrator at Lagos. There was one Executive Council and one nominated Legislative Council for the two settlements, and one Supreme Court. The charter of 1874 was superseded by letters patent dated the 23rd of January, 1883, and 13th January, 1886, respectively. By the latter instrument Lagos was separated from the Gold Coast and formed into a distinct colony. Provision was made for an Executive and Legislative Council, the members of both being nominated by the Crown. Two unofficial members have been appointed to the Legislative Council.\n\nBy Order of the Queen in Council of 6th August, 1874, the Legislature was empowered to regulate by Ordinance or Ordinances all such powers as Her Majesty may enjoy in the protected territories.\n\nThe Supreme Court of the Colony was a Court of Appeal for Lagos, and also under the West African Order in Council, 1884, but legislation providing for the establishment of separate courts of appeal in each colony was passed in 1888.\n\nLaw and Justice.\n\nThe law of the colony is the common law, the doctrines of equity, and the statutes of general application in force in England on the 24th July, 1874, modified by a large number of Local Ordinances passed at various periods since that date. The Criminal Law was codified in 1892, and civil and criminal procedure are regulated by the Supreme Court Ordinance passed in 1876.\n\nJustice is administered by the Supreme Court presided over by the Chief Justice, Divisional Courts held in different parts of the colony by two puisne judges, and thirteen inferior Courts with limited criminal and civil jurisdiction presided over by District Commissioners. The Supreme Court has an original civil and criminal jurisdiction, and decides appeals from the inferior courts in civil matters, while the Chief Justice has a power of revision of the decisions of the Commissioners in criminal cases. Appeals from Divisional Courts are heard by a full court.\n\nNative law is administered in all the Courts, in as far as it is not incompatible with any Statute or Ordinance, and not repugnant to natural justice.\n\nThe Forts of St. James at Accra, St. Jago at Elmina, and Cape Coast Castle are utilised as prisons pending the erection of a central prison at Accra.\n\nAt Accra convicts are taught trades, remunerative industries are carried on, and the English penal system is carried out in a modified form.\n\nClimate.\n\nThe climate is very unhealthy, especially for Europeans. In 1891 the death rate among the non-official European population was 32·7 per 1,000; in 1892, 79·7 per 1,000; in 1893, 64·93 per 1,000; and in 1894, 19·6 per 1,000; and among the European officials 30·7 per 1,000 in 1891; 36·3 per 1,000 in 1892; 31·25 per 1,000 in 1893; and 33·7 per 1,000 in 1894. No data are at hand for estimating the death rate among the natives. Infant mortality is great. The mean temperature in the shade during the past seven years was, at Accra, 85·31° F. The average annual rainfall at the same place and during the same period was 29·08 inches.\n\nThe rainfall varies with the physical configuration of the country, and is very great in Axim and the mining districts of Tarkwa, Upper and Lower Wassaw, &c. The \"first rains,\" or rainy season proper, begin in March and end in July, the \"latter rains\" are spread over the months of September and October. The Harmattan season begins in December and ends in February. It is characterized by a cool wind which is sometimes dry and bracing, but often moist and then very depressing. The climate generally is hot and moist and very malarious.\n\nDomestic Slavery.\n\nDomestic slavery existed from time immemorial on the Gold Coast, as in other parts of Africa, the slave population consisting partly of native-born slaves, and partly of Donkos, slaves purchased from Ashanti importers. Slavery was mainly an emanation of parental authority, every man being saleable either by his father or mother, according to the character of the union subsisting between his parents, and the consequent status of the mother; but there was also a species of slavery called pawning, founded on contract, which arose when a debtor gave to his creditor, as a security, either himself, or a child or slave, to be a temporary slave in the hands of the creditor until debt and interest were paid.\n\nWithin the British possessions on the Gold Coast, slavery was abolished by force of the statute 3 & 4 Will. IV., c. 73, but no attempt had been made to deal with it in the Protectorate, which was not affected by that statute. The harsher usages of slavery were, however, appreciably mitigated by the action of the court of the \"judicial assessor to the Native Chiefs\" and other magistrates. At the conclusion of the war of 1873-4 the question was taken in hand anew by the newly established Legislative Council at its first meeting, and settled by two\nordinances. One of these prohibits, under penalties, the introduction of slaves into the Protectorate, and the buying and selling, and pawning of slaves and other persons within the Protectorate; and the second declares, that henceforth no court, native or British, shall take notice of, so as to give effect to, the relations between master and slave, except in so far as those relations may be in accordance with the law of England relating to master and servant.\n\nMail and Steamship Service.\n\nA steamer of the British and African Company, or the African Steamship Company, leaves Liverpool every Saturday, calling at Grand Canary, Sierra Leone, Cape Coast and Accra, the length of the voyage to Accra being 21 days. Every alternate Wednesday one of these two companies' steamers leaves Liverpool touching at Madeira and Teneriffe and every port on the West Coast as far as Kwitta, the voyage to Kwitta being timed to occupy 28 days. Every 20 and 21 days steamers of the above two lines leave Hamburg calling at most of the West African ports as far as Kwitta, the voyage to Accra occupying 29 days.\n\nThere is a monthly departure from Liverpool of one of the Company's steamers for Sierra Leone, Accra, Lagos, and ports on the South-West Coast as far as Loanda, the journey averaging 41 days. There is also a German line of steamers starting from Hamburg, and a French line starting from Havre, which call at the Gold Coast and other ports.\n\nInternal Communication.\n\nThere is no railway in the colony, but in 1893 a survey for a line from Kormantin Bay, about 3 miles west of Saltpond, was commenced, and in 1894 completed as far north as Insuaim, on the left bank of the Birrim River. The question of constructing the railway is under consideration.\n\nThe only roads properly so called in the colony are, the road between Accra and Christiansborg, a distance of 2½ miles, the road from the latter place to the Government Sanitarium at Aburi, a distance of 26 miles, the military road between Cape Coast and Prahsu, a distance of 75 miles, and the road from Cape Coast to Anamaboe, a distance of 12 miles. In addition to these the road from Aburi through Akwapim and Eastern and Western Krobo to Kpong and Akuse, and the road from Chama to Tarkwa (Upper Wassaw) are all under more or less constant Government supervision, and on that account are kept in fair order. The native kings and chiefs who can be induced to keep their bush tracks clear of bush and passable for traders and travellers at all periods of the year are paid 10s. a quarter, per mile, and cutlasses and hatchets are loaned to them by the Government to assist them in the work, but it is only within the immediate vicinity of the several Government stations that the bush-tracks are as a rule in fair order. A road overseer has been appointed in several of the districts, and a Roads Department has been established.\n"
+}

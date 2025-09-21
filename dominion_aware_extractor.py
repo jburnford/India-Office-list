@@ -96,75 +96,85 @@ class DominionAwareExtractor:
         """Group province/admin sections under their parent dominions"""
 
         grouped_colonies = []
+        processed_indices = set()
         i = 0
 
         while i < len(raw_boundaries):
+            if i in processed_indices:
+                i += 1
+                continue
+
             current_pos, current_name = raw_boundaries[i]
 
-            # Check if this is a dominion header
-            dominion_name = self.get_dominion_name(current_name)
+            # Check if this section belongs to any dominion
+            parent_dominion = None
+            for dominion_name in self.dominion_structure.keys():
+                if self.belongs_to_dominion(current_name, dominion_name):
+                    parent_dominion = dominion_name
+                    break
 
-            if dominion_name:
-                # This is a dominion - collect all its provinces/sections
+            if parent_dominion:
+                # This belongs to a dominion - find the dominion and collect all its sections
+                dominion_start = None
                 dominion_sections = []
-                j = i + 1
 
-                # Find dominion end position
-                if i < len(raw_boundaries) - 1:
-                    dominion_end = raw_boundaries[i + 1][0]
+                # Look backwards and forwards to find all sections belonging to this dominion
+                for j in range(len(raw_boundaries)):
+                    if j in processed_indices:
+                        continue
 
-                    # Look ahead to see what belongs to this dominion
-                    while j < len(raw_boundaries) and raw_boundaries[j][0] < dominion_end:
-                        section_pos, section_name = raw_boundaries[j]
+                    section_pos, section_name = raw_boundaries[j]
 
-                        if self.belongs_to_dominion(section_name, dominion_name):
-                            # Calculate section end
-                            if j < len(raw_boundaries) - 1:
-                                section_end = raw_boundaries[j + 1][0]
-                            else:
-                                section_end = dominion_end
+                    # Check if this is the dominion header or belongs to the dominion
+                    if (parent_dominion in section_name or
+                        self.belongs_to_dominion(section_name, parent_dominion)):
 
-                            section_text = text[section_pos:section_end].strip()
+                        if dominion_start is None or section_pos < dominion_start:
+                            dominion_start = section_pos
 
+                        # Calculate section end
+                        if j < len(raw_boundaries) - 1:
+                            section_end = raw_boundaries[j + 1][0]
+                        else:
+                            section_end = end_pos
+
+                        section_text = text[section_pos:section_end].strip()
+
+                        if len(section_text) > 100:  # Skip tiny sections
                             dominion_sections.append({
                                 'name': section_name,
                                 'text': section_text,
                                 'start_pos': section_pos,
                                 'end_pos': section_end,
                                 'size': len(section_text),
-                                'type': self.classify_dominion_section(section_name, dominion_name)
+                                'type': self.classify_dominion_section(section_name, parent_dominion)
                             })
-                            j += 1
-                        else:
-                            break
 
-                    dominion_end = raw_boundaries[j][0] if j < len(raw_boundaries) else end_pos
-                else:
-                    dominion_end = end_pos
-                    j = len(raw_boundaries)
+                        processed_indices.add(j)
 
-                # Extract dominion text
-                dominion_text = text[current_pos:dominion_end].strip()
+                if dominion_sections:
+                    # Calculate dominion boundaries
+                    dominion_end = max(s['end_pos'] for s in dominion_sections)
+                    dominion_text = text[dominion_start:dominion_end].strip()
 
-                grouped_colonies.append({
-                    'name': dominion_name,
-                    'text': dominion_text,
-                    'start_pos': current_pos,
-                    'end_pos': dominion_end,
-                    'size': len(dominion_text),
-                    'type': 'dominion',
-                    'provinces': dominion_sections,
-                    'province_count': len(dominion_sections),
-                    'metadata': {
-                        'chunk_preview': dominion_text[:200].replace('\n', ' '),
-                        'chunk_ending': dominion_text[-200:].replace('\n', ' '),
-                        'position_info': f"chars {current_pos:,}-{dominion_end:,}",
-                        'is_dominion': True,
-                        'province_names': [s['name'] for s in dominion_sections]
-                    }
-                })
+                    grouped_colonies.append({
+                        'name': parent_dominion,
+                        'text': dominion_text,
+                        'start_pos': dominion_start,
+                        'end_pos': dominion_end,
+                        'size': len(dominion_text),
+                        'type': 'dominion',
+                        'provinces': dominion_sections,
+                        'province_count': len(dominion_sections),
+                        'metadata': {
+                            'chunk_preview': dominion_text[:200].replace('\n', ' '),
+                            'chunk_ending': dominion_text[-200:].replace('\n', ' '),
+                            'position_info': f"chars {dominion_start:,}-{dominion_end:,}",
+                            'is_dominion': True,
+                            'province_names': [s['name'] for s in dominion_sections]
+                        }
+                    })
 
-                i = j
             else:
                 # This is a regular colony
                 if i < len(raw_boundaries) - 1:
@@ -174,8 +184,13 @@ class DominionAwareExtractor:
 
                 colony_text = text[current_pos:colony_end].strip()
 
-                # Skip very small sections
-                if len(colony_text) > 5000:
+                # Skip very small sections and obvious non-colonies
+                if (len(colony_text) > 5000 and
+                    not any(admin_term in current_name.upper() for admin_term in [
+                        'ECCLESIASTICAL', 'EXECUTIVE COUNCIL', 'LEGISLATIVE COUNCIL',
+                        'CONTROL AND AUDIT', 'PRIME MINISTER', 'KCMG', 'BISHOPS'
+                    ])):
+
                     sections = self.detect_standard_sections(colony_text)
 
                     grouped_colonies.append({
@@ -197,7 +212,9 @@ class DominionAwareExtractor:
                         }
                     })
 
-                i += 1
+                processed_indices.add(i)
+
+            i += 1
 
         return grouped_colonies
 

@@ -1,0 +1,24 @@
+# macOS metadata
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+
+# Large OCR outputs and derived data
+*.json
+*.jsonl
+chunks/
+biography_entries.json
+biography_chunk_index.json
+india_office_file_list.json
+india_office_chunk_summary*.json
+india_office_region_counts*.json
+
+# Notebooks / scratch work (if any)
+*.ipynb_checkpoints/
+
+# Shell scripts for downloads/logs (adjust if needed)
+*.log

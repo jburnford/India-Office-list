@@ -7,7 +7,7 @@ structural and semantic characteristics of its target document type.
 """
 
 import re
-from typing import List, Dict, Tuple, Optional
+from typing import Any, List, Dict, Tuple, Optional
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
 
@@ -18,7 +18,7 @@ class Chunk:
     start_pos: int
     end_pos: int
     chunk_id: str
-    metadata: Dict[str, any]
+    metadata: Dict[str, Any]
 
 class BaseChunker(ABC):
     """Base class for all chunking strategies."""

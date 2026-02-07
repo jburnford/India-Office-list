@@ -8,7 +8,7 @@ to classify historical documents into appropriate types for specialized chunking
 
 import json
 import re
-from typing import Dict, List, Tuple, Optional
+from typing import Any, Dict, List, Tuple, Optional
 from dataclasses import dataclass
 from enum import Enum
 
@@ -25,8 +25,8 @@ class DocumentProfile:
     """Profile containing document analysis results."""
     document_type: DocumentType
     confidence: float
-    features: Dict[str, any]
-    metadata: Dict[str, any]
+    features: Dict[str, Any]
+    metadata: Dict[str, Any]
     suggested_chunk_size: Tuple[int, int]  # (min, max) characters
 
 class DocumentDNAAnalyzer:
@@ -99,7 +99,7 @@ class DocumentDNAAnalyzer:
             suggested_chunk_size=chunk_size
         )
 
-    def _extract_features(self, text: str) -> Dict[str, any]:
+    def _extract_features(self, text: str) -> Dict[str, Any]:
         """Extract structural and content features from text."""
         lines = text.split('\n')
         total_lines = len(lines)

@@ -1,0 +1,10 @@
+# Core dependencies
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Embedding and NLP
+sentence-transformers>=2.2.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0

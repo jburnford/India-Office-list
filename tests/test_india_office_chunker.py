@@ -2,16 +2,18 @@ import sys
 from pathlib import Path
 import unittest
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from chunking.india_office_chunker import IndiaOfficeChunker
 
-DATA_PATH = ROOT / "il_1892_jan.json"
+DATA_PATH = ROOT / "extracted_json" / "il_1892_jan.json"
+DATA_AVAILABLE = DATA_PATH.exists()
 
 
+@unittest.skipUnless(DATA_AVAILABLE, f"Test data not found: {DATA_PATH}")
 class IndiaOfficeChunkerTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

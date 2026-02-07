@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 import unittest
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
@@ -10,8 +10,10 @@ if str(SRC_DIR) not in sys.path:
 from chunking.colonial_office_chunker import ColonialOfficeChunker
 
 DATA_PATH = ROOT / "extracted_json" / "output_a29c9429212df7959632e22b6a667fd55654a592" / "ColonialOfficeList1896.json"
+DATA_AVAILABLE = DATA_PATH.exists()
 
 
+@unittest.skipUnless(DATA_AVAILABLE, f"Test data not found: {DATA_PATH}")
 class ColonialOfficeChunkerTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

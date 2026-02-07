@@ -226,8 +226,16 @@ class AdministrativeChunker(BaseChunker):
         sections = []
         lines = text.split('\n')
 
+        # Build character offset for each line
+        line_offsets = []
+        offset = 0
+        for line in lines:
+            line_offsets.append(offset)
+            offset += len(line) + 1  # +1 for newline
+
         current_section = {
             'start': 0,
+            'char_start': 0,
             'lines': [],
             'type': 'unknown',
             'has_tables': False
@@ -248,6 +256,7 @@ class AdministrativeChunker(BaseChunker):
                 # Start new section
                 current_section = {
                     'start': i,
+                    'char_start': line_offsets[i],
                     'lines': [line],
                     'type': line_type,
                     'has_tables': False
@@ -295,6 +304,7 @@ class AdministrativeChunker(BaseChunker):
         """Chunk a single administrative section."""
         chunks = []
         text = section['text']
+        section_start = section.get('char_start', 0)
 
         if len(text) <= self.max_size:
             # Section fits in one chunk
@@ -307,8 +317,8 @@ class AdministrativeChunker(BaseChunker):
 
             chunk = Chunk(
                 text=text,
-                start_pos=0,
-                end_pos=len(text),
+                start_pos=section_start,
+                end_pos=section_start + len(text),
                 chunk_id=chunk_id,
                 metadata={
                     'size': len(text),
@@ -328,8 +338,10 @@ class AdministrativeChunker(BaseChunker):
         """Split large administrative section preserving table integrity."""
         chunks = []
         lines = section['text'].split('\n')
+        running_pos = section.get('char_start', 0)
 
         current_chunk_lines = []
+        current_chunk_start = running_pos
         in_table = False
         table_buffer = []
 
@@ -363,8 +375,8 @@ class AdministrativeChunker(BaseChunker):
 
                 chunk = Chunk(
                     text=current_text,
-                    start_pos=0,
-                    end_pos=len(current_text),
+                    start_pos=current_chunk_start,
+                    end_pos=current_chunk_start + len(current_text),
                     chunk_id=chunk_id,
                     metadata={
                         'size': len(current_text),
@@ -374,6 +386,7 @@ class AdministrativeChunker(BaseChunker):
                 )
                 chunks.append(chunk)
 
+                current_chunk_start += len(current_text) + 1  # +1 for newline separator
                 current_chunk_lines = []
 
         # Handle remaining content
@@ -390,8 +403,8 @@ class AdministrativeChunker(BaseChunker):
 
             chunk = Chunk(
                 text=current_text,
-                start_pos=0,
-                end_pos=len(current_text),
+                start_pos=current_chunk_start,
+                end_pos=current_chunk_start + len(current_text),
                 chunk_id=chunk_id,
                 metadata={
                     'size': len(current_text),
@@ -459,10 +472,18 @@ class GovernmentReportChunker(BaseChunker):
         sections = []
         lines = text.split('\n')
 
+        # Build character offset for each line
+        line_offsets = []
+        offset = 0
+        for line in lines:
+            line_offsets.append(offset)
+            offset += len(line) + 1  # +1 for newline
+
         current_section = {
             'title': '',
             'lines': [],
             'start_line': 0,
+            'char_start': 0,
             'has_tables': False,
             'has_financial_data': False
         }
@@ -479,6 +500,7 @@ class GovernmentReportChunker(BaseChunker):
                     'title': line.strip(),
                     'lines': [line],
                     'start_line': i,
+                    'char_start': line_offsets[i],
                     'has_tables': False,
                     'has_financial_data': False
                 }
@@ -519,6 +541,7 @@ class GovernmentReportChunker(BaseChunker):
         """Chunk a government report section."""
         chunks = []
         text = section['text']
+        section_start = section.get('char_start', 0)
 
         if len(text) <= self.max_size:
             # Section fits in one chunk
@@ -532,8 +555,8 @@ class GovernmentReportChunker(BaseChunker):
 
             chunk = Chunk(
                 text=text,
-                start_pos=0,
-                end_pos=len(text),
+                start_pos=section_start,
+                end_pos=section_start + len(text),
                 chunk_id=chunk_id,
                 metadata={
                     'size': len(text),
@@ -553,6 +576,7 @@ class GovernmentReportChunker(BaseChunker):
         """Split large report section at logical boundaries."""
         chunks = []
         paragraphs = section['text'].split('\n\n')
+        current_chunk_start = section.get('char_start', 0)
 
         current_chunk_paras = []
 
@@ -574,8 +598,8 @@ class GovernmentReportChunker(BaseChunker):
 
                 chunk = Chunk(
                     text=current_text,
-                    start_pos=0,
-                    end_pos=len(current_text),
+                    start_pos=current_chunk_start,
+                    end_pos=current_chunk_start + len(current_text),
                     chunk_id=chunk_id,
                     metadata={
                         'size': len(current_text),
@@ -585,6 +609,7 @@ class GovernmentReportChunker(BaseChunker):
                 )
                 chunks.append(chunk)
 
+                current_chunk_start += len(current_text) + 2  # +2 for '\n\n' paragraph separator
                 current_chunk_paras = [para]
             else:
                 current_chunk_paras.append(para)
@@ -603,8 +628,8 @@ class GovernmentReportChunker(BaseChunker):
 
             chunk = Chunk(
                 text=current_text,
-                start_pos=0,
-                end_pos=len(current_text),
+                start_pos=current_chunk_start,
+                end_pos=current_chunk_start + len(current_text),
                 chunk_id=chunk_id,
                 metadata={
                     'size': len(current_text),
@@ -640,21 +665,35 @@ class HybridChunker(BaseChunker):
         chunks = []
         sentences = self._split_into_sentences(text)
 
-        current_chunk_sentences = []
-
+        # Map each sentence to its position in the original text
+        sentence_positions = []
+        search_from = 0
         for sentence in sentences:
+            pos = text.find(sentence, search_from)
+            if pos == -1:
+                pos = search_from  # fallback
+            sentence_positions.append(pos)
+            search_from = pos + len(sentence)
+
+        current_chunk_sentences = []
+        chunk_first_idx = 0  # index into sentences list for first sentence in current chunk
+
+        for i, sentence in enumerate(sentences):
             # Check if adding this sentence would exceed max size
             test_text = ' '.join(current_chunk_sentences + [sentence])
 
             if len(test_text) > self.max_size and current_chunk_sentences:
                 # Create chunk
                 current_text = ' '.join(current_chunk_sentences)
+                last_idx = i - 1
+                start_pos = sentence_positions[chunk_first_idx]
+                end_pos = sentence_positions[last_idx] + len(sentences[last_idx])
                 chunk_id = f"{document_id}_hybrid_{len(chunks)}"
 
                 chunk = Chunk(
                     text=current_text,
-                    start_pos=0,
-                    end_pos=len(current_text),
+                    start_pos=start_pos,
+                    end_pos=end_pos,
                     chunk_id=chunk_id,
                     metadata={
                         'size': len(current_text),
@@ -665,18 +704,22 @@ class HybridChunker(BaseChunker):
                 chunks.append(chunk)
 
                 current_chunk_sentences = [sentence]
+                chunk_first_idx = i
             else:
                 current_chunk_sentences.append(sentence)
 
         # Handle remaining sentences
         if current_chunk_sentences:
             current_text = ' '.join(current_chunk_sentences)
+            last_idx = len(sentences) - 1
+            start_pos = sentence_positions[chunk_first_idx]
+            end_pos = sentence_positions[last_idx] + len(sentences[last_idx])
             chunk_id = f"{document_id}_hybrid_{len(chunks)}"
 
             chunk = Chunk(
                 text=current_text,
-                start_pos=0,
-                end_pos=len(current_text),
+                start_pos=start_pos,
+                end_pos=end_pos,
                 chunk_id=chunk_id,
                 metadata={
                     'size': len(current_text),

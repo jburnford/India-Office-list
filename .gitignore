@@ -10,6 +10,8 @@ __pycache__/
 # Large OCR outputs and derived data
 *.json
 *.jsonl
+# But keep reference data checked in
+!data/abbreviations.json
 chunks/
 biography_entries.json
 biography_chunk_index.json
